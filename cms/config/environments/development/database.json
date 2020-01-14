@@ -5,15 +5,9 @@
       "connector": "mongoose",
       "settings": {
         "client": "mongo",
-        "host": "${process.env.DATABASE_HOST}",
-        "port": 27017,
-        "database": "${process.env.DATABASE_NAME}",
-        "username": "${process.env.DATABASE_USERNAME}",
-        "password": "${process.env.DATABASE_PASSWORD}",
-        "srv": "true"
+        "uri": "mongodb+srv://${process.env.DATABASE_USERNAME}:${process.env.DATABASE_PASSWORD}@cluster0-covcr.mongodb.net/test?retryWrites=true"
       },
       "options": {
-        "authenticationDatabase": "",
         "ssl": true
       }
     }
