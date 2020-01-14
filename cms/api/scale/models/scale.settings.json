@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "scales",
+  "info": {
+    "name": "Scale"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "notes": {
+      "collection": "note"
+    },
+    "root": {
+      "model": "note"
+    },
+    "intervals": {
+      "type": "biginteger"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
